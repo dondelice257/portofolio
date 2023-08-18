@@ -7,28 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent{
 
-  roles = ['Web Developer', 'Web Designer', 'Graphic Designer', 'Mobile Developer', 'Content Creator'];
+  roles = ['Web Developer', 'Web Designer', 'Graphic Designer', 'Bloger','Mobile Developer', 'Content Creator'];
   currentRoleIndex = 0;
   typingSpeed = 100; 
 
- 
+ ngOnInit(){
+  this.typeRole();
 
-  ngDoCheck(){
-    this.typeRole();
 
-    const verticalLine:any = document.getElementById('verticalLine');
+ }
 
-// Show the line after 1 second
-setTimeout(() => {
-  verticalLine.style.opacity = '1';
-}, 2000);
 
-// Hide the line after another 1 second
-setTimeout(() => {
-  verticalLine.style.opacity = '0';
-}, 6000);
-
-  }
 
   typeRole() {
     const roleText = this.roles[this.currentRoleIndex];
@@ -44,7 +33,7 @@ setTimeout(() => {
         clearInterval(typingInterval);
         setTimeout(() => {
           this.eraseRole();
-        }, 3000); 
+        }, 5000); 
       }
     }, this.typingSpeed);
   }
