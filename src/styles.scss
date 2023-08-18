@@ -1,18 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'node_modules/bootstrap/scss/bootstrap';
 
-.bg-black{
-    background-color: #000;
+.bg-main{
+    background-color: rgb(33, 133, 220);;
 
 }
-.text-black{
-    color:#000
+.text-main{
+    color: rgb(33, 133, 220);;
+
 }
 
-.bg-white{
-    background-color: #fff;
-}
-
-.text-white{
-    color: #fff;
-}

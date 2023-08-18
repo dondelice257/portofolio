@@ -1,3 +1,15 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+
+<div class="h-75 overflow-y-hidden position-relative">
+    <div class="position-fixed w-100 shadow"
+    style="top: 0;">
+       <app-header></app-header>
+    </div>
+    <div class=" pt-5 bg-light">
+        <router-outlet></router-outlet>
+    </div>
+    <div 
+    class="position-fixed w-100 bg-dark"
+    style="bottom: 0; ">
+        <app-footer></app-footer>
+    </div>
+</div>
