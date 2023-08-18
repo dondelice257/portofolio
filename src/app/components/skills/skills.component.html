@@ -1,3 +1,63 @@
-<p>
-  skills works!
-</p>
+<div class="pt-5 pb-3 d-flex justify-content-center">
+  <div class="w-75 p-2 bg-white shadow">
+    <div>
+     <div class="d-flex justify-content-center mb-2">
+        <div>
+          <h4 class="text-main">Languages and Frameworks</h4>
+        </div>
+     </div>
+     <div class="row">
+      <div class="col-lg-6 mb-3" *ngFor="let skill of skills">
+        <div class="d-grid">
+          <div class="d-flex justify-content-between bg-dark px-2 align-items-center">
+            <div class="text-main d-flex align-items-center">
+              <span class="fs-2 me-3">
+                <i [class]="skill.icon"></i>
+              </span>
+              <span>
+                <h5>{{skill.name}}</h5>
+              </span>
+            </div>
+            <div class="text-white">
+              <span>{{ skill.displayAverage || 0 }}%</span>
+            </div>
+           
+
+          </div>
+          <div class="w-100 bg-white">
+            <div class="bg-main pt-1"
+            [style.width]="skill.displayAverage + '%'"> 
+              
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+     </div>
+    
+
+    </div>
+    <div>
+      <div class="d-flex justify-content-center mb-2 mt-4">
+        <div>
+          <h4 class="text-main">Tools</h4>
+        </div>
+     </div>
+     <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-6 m-2" *ngFor="let tool of tools">
+        <div class="d-flex align-items-center"
+        style="flex-direction: column;">
+          <i [class]="tool.icon +' fs-1'"></i>
+          <span >{{tool.name}}</span>
+        </div>
+
+      </div>
+
+     </div>
+    </div>
+
+  </div>
+
+
+</div>
