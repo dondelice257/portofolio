@@ -41,7 +41,12 @@ export class SkillsComponent implements OnInit {
     {icon:'devicon-illustrator-plain colored', name:'Adobe Illustrator',},
     {icon:'devicon-chrome-plain colored', name:'Google chrome',},
     {icon:'devicon-firefox-plain colored', name:'Firefox',},
-    {icon:'devicon-edge-plain colored', name:'Edge',},
+    {icon:'devicon-linux-plain colored', name:'Linux',},
+    {icon:'devicon-ubuntu-plain colored', name:'Ubuntu',},
+    {icon:'devicon-windows8-plain colored', name:'Windows',},
+
+
+
 
 
 
