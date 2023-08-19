@@ -6,7 +6,55 @@
             </div>
         </div>
         <div class="d-flex align-items-center">
-            <div class="d-flex justify-content-between me-4">
+            <div class="d-lg-none">
+                <div 
+                class="float-end mb-2 p-2"
+                role="button"
+                >
+                    <div (click)="toggleMenu()" *ngIf="!isMenuOpen" >
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div (click)="isMenuOpen=!isMenuOpen" *ngIf="isMenuOpen">
+                        <i class="fa fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="d-grid mt-3 justify-content-between me-4" *ngIf="isMenuOpen">
+                    <div class="me-4">
+                        <h4
+                         routerLink=""
+                          routerLinkActive="active" 
+                          class=""
+                          role="button"
+                          [routerLinkActiveOptions]="{ exact: true }"
+                          >Home</h4>
+                    </div>
+                    <div class="me-4">
+                        <h4 
+                        role="button"
+                        routerLink="about" 
+                        routerLinkActive="active"
+                        >About</h4>
+                    </div>
+                    <div class="me-4">
+                        <h4
+                         routerLink="skills" 
+                         role="button"
+                         routerLinkActive="active"
+                         >Skills</h4>
+                    </div>
+                    <div>
+                        <h4 
+                        class="me-4"
+                        role="button"
+                        routerLink="contact"
+                         routerLinkActive="active"
+                         >Contact</h4>
+                    </div>
+                   
+                </div>
+                
+            </div>
+            <div class="d-lg-flex justify-content-between d-none me-4">
                 <div class="me-4">
                     <h4
                      routerLink=""
