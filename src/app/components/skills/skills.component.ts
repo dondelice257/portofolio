@@ -44,6 +44,12 @@ export class SkillsComponent implements OnInit {
     {icon:'devicon-linux-plain colored', name:'Linux',},
     {icon:'devicon-ubuntu-plain colored', name:'Ubuntu',},
     {icon:'devicon-windows8-plain colored', name:'Windows',},
+    {icon:'devicon-karma-plain colored', name:'Karma',},
+    {icon:'devicon-jest-plain colored', name:'Jest',},
+    {icon:'devicon-materialui-plain colored', name:'Material UI',},
+
+
+
 
 
 
