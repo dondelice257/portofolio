@@ -13,7 +13,20 @@
   a{
     color: black;
   }
-
+/* Default styling for large screens */
+.home {
+    background-image: none; /* Remove background image by default */
+  }
+  
+  /* Background image for small and medium screens */
+  @media (max-width: 991px) {
+    .home {
+      background-image: url(../../../assets/images/kostas.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  
+  
  
   
   
