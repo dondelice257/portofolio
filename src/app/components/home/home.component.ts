@@ -13,7 +13,8 @@ export class HomeComponent{
 
  ngOnInit(){
   this.typeRole();
-
+// var int name ='space';
+// console.log(name);
 
  }
 
