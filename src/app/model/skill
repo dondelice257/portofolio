@@ -1,7 +1,0 @@
-export class Skill{
-    icon: string;
-    name: string;
-    average: number;
-
-
-}
