@@ -31,3 +31,14 @@ a:hover{
       -o-transform: translateY(0);
 }
   }
+
+  @media (min-width:992px){
+    .w-full{
+      width: 40%;
+    }
+  }
+  @media (max-width:991px){
+    .w-full{
+      width: 100%;
+    }
+  }
