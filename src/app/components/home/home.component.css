@@ -21,7 +21,7 @@
   /* Background image for small and medium screens */
   @media (max-width: 991px) {
     .home {
-      background-image: url(../../../assets/images/kostas.svg);
+      background-image: url(../../../assets/images/Delice.png);
       background-repeat: no-repeat;
     }
   }
